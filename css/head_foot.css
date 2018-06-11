@@ -1,0 +1,9 @@
+.wrap{
+	border-top: 30px solid #2167ab;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.wrap .bottom{
+    margin-top: 10px;
+    text-align: center;
+}
