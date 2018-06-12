@@ -125,10 +125,19 @@
 
 }
 /*新闻公告*/
+.newsContent {
+	width: 1100px;
+	margin: 0 auto 40px;
+}
 .newsContent .news_left {
-	width: 450px;
-	height: 370px;
-	margin-left: 
+	width: 480px;
+    height: 370px;
+    margin-left: 46px; 
+    border: 2px solid #CCE0F9;
+}
+
+.newsContent .news_left_b {
+	border: 2px solid #CCE0F9;
 }
 .swiper-container3 {
     margin: 0 auto;
@@ -137,9 +146,9 @@
     list-style: none;
     padding: 0;
     z-index: 1;
-    width: 450px;
-    height: 300px;
-    top: 44px;
+    width: 480px;
+    height: 370px;
+    
 }
 .swiper-container3 .swiper-slide img {
 	width: 100%;
@@ -166,4 +175,78 @@ height: 18px;
 }
 .swiper-container3 .swiper-pagination {
 	text-align: right;
+}
+
+.tab-g {
+	border-bottom:0;
+	height:36px;
+	background-color: #B2B8ED;
+	background-image: url(../images/sy_xw_2.png);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	padding-left: 65px;
+	padding-top: 1px;
+}
+.tab-g li {
+    float: left;
+    height: 34px;
+    margin-left: 25px;
+    color: #000;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+.tab-g li.active-gn {
+	color:#155A9E;
+}
+.bottom .products .main-gn {
+	display:none;
+}
+.bottom .products .main-gn.selected-gn {
+	display:block;
+}
+.bottom .products .main-gn ul {
+	width: 100%;
+	height: 310px;
+    overflow: hidden;
+}
+.bottom .products .main-gn li {
+	background: url(../images/sy_zczc.png) no-repeat 20px center;
+	background-size: 15px 28px;
+	height: 50px;
+	line-height: 54px;
+	padding-left: 50px;
+	border-bottom: 1px dashed #999;
+	width: 78%;
+	margin: 0 auto;
+	font-size: 15px;
+}
+.bottom .products .main-gn li a {
+	color: #000;
+	
+}
+.bottom .products .main-gn li a span:first-child {
+	display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+.bottom .products .main-gn li a span:last-child {
+    position: relative;
+    bottom: 22px;
+    left: 30px;
+}
+/*客服*/
+.indexKefu {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	bottom: 300px!important;
+	right: 30px!important;
+}
+.indexKefu img {
+	width: 100%;
+	height: 100%;
 }
