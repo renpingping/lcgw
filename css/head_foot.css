@@ -58,7 +58,7 @@
     cursor: pointer;
     background-color: #ededed;
 }
-.top .top-nav ul li a {
+.top .top-nav ul li>a {
     display: block;
     float: right;
     height: 100%;
@@ -72,10 +72,39 @@
 .top .top-nav ul li:last-chlid{
 	margin-left: 10px;
 }
-.top .top-nav ul li a:hover{
+.top .top-nav .show{
+	position: relative;
+}
+.top .top-nav ul li a:hover {
 	color:#fff;
 	background-color: #155a9e;
 }
+.top-nav .none{
+	display: none;
+	position: absolute;
+    top: 55px;
+    left: 50px;
+    width: 120px;
+    color: #fff;
+    background-color: #8aacce;
+}
+.top-nav .none a{
+	display: block;
+    float: left;
+    margin-top: 10px;
+    width: 120px;
+    text-align: center;
+    color: #fff;
+    font: 300 17px/30px "Microsoft YaHei";
+    cursor: pointer;
+}
+.top-nav .none a:last-child{
+	margin-bottom: 15px;
+}
+.top .top-nav .show:hover .none{
+	display: block;
+}
+
 .search{
     margin-left: 40px;
 	padding:10px;
