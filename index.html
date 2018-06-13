@@ -101,17 +101,20 @@
 		<!-- 栾川印象内容 -->
 		<div class="impressiveContent clearfix">
 			<ul>
-				<li>
+				<li><a href="##123">
 					<p><img src="images/sy_lcyx_1.png" alt="栾川印象1"></p>
 					<p>栾川:用好家风滋润孩子的心田,“非淡泊无以明志，非宁静无以致远”“崇礼以敦孝思，孝悌以肃家风，睦邻以念同宗，耕读以务本业”……</p>
+					</a>
 				</li>
-				<li>
+				<li><a href="##123">
 					<p><img src="images/sy_lcyx_2.png" alt="栾川印象2"></p>
 					<p>栾川:用好家风滋润孩子的心田,“非淡泊无以明志，非宁静无以致远”“崇礼以敦孝思，孝悌以肃家风，睦邻以念同宗，耕读以务本业”……</p>
+					</a>
 				</li>
-				<li>
+				<li><a href="##123">
 					<p><img src="images/sy_lcyx_3.png" alt="栾川印象3"></p>
 					<p>栾川:用好家风滋润孩子的心田,“非淡泊无以明志，非宁静无以致远”“崇礼以敦孝思，孝悌以肃家风，睦邻以念同宗，耕读以务本业”……</p>
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -137,17 +140,53 @@
 				  <div class="swiper-pagination"></div>
 				  <!-- Add Arrows --> 
 				</div>
-		
 			</div>
-			<div class="news_left left">
-				
+			<div class="news_left news_left_b left">
+				<div> 
+				  <!-- tap切换 -->
+				  <ul class="tab-g clearfix">
+				    <li class="tab-gn active-gn">通知公告</li>
+				    <li class="tab-gn">新闻动态</li>
+				  </ul>
+				</div>
+				<!-- main-gn内的内容是切换的内容 -->
+				<div class="bottom clearfix">
+				  <div class="products">
+				    <div class="main-gn selected-gn">
+						<ul>
+							<li><a href="##"><span>国家发改委市场与价格研究所调研陆港</span><span>2014-05-08</span></a></li>
+							<li><a href="##"><span>陆港参加中国(河南)自贸区国际物流服务好大家都说好...</span><span>2018-06-12</span></a></li>
+							<li><a href="##"><span>国家发改委市场与价格研究所调研陆港</span><span>2014-05-08</span></a></li>
+							<li><a href="##"><span>陆港参加中国(河南)自贸区国际物流服务好大家都说好...</span><span>2018-06-12</span></a></li>
+							<li><a href="##"><span>国家发改委市场与价格研究所调研陆港</span><span>2014-05-08</span></a></li>
+							<li><a href="##"><span>陆港参加中国(河南)自贸区国际物流服务好大家都说好...</span><span>2018-06-12</span></a></li>
+						</ul>
+				    </div>
+				    <div class="main-gn">
+						<ul>
+							<li><a href="##"><span>陆港参加中国(河南)自贸区国际物流服务好大家都说好...</span><span>2018-06-12</span></a></li>
+							<li><a href="##"><span>国家发改委市场与价格研究所调研陆港</span><span>2014-05-08</span></a></li>
+							<li><a href="##"><span>陆港参加中国(河南)自贸区国际物流服务好大家都说好...</span><span>2018-06-12</span></a></li>
+							<li><a href="##"><span>国家发改委市场与价格研究所调研陆港</span><span>2014-05-08</span></a></li>
+							<li><a href="##"><span>陆港参加中国(河南)自贸区国际物流服务好大家都说好...</span><span>2018-06-12</span></a></li>
+						</ul>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
-		
 	</div>
+	<!-- 首页客服 -->
+	<div class="indexKefu" id="kfQQ">
+		<a href="tencent://message/?uin=1234567890"><img src="images/sy_kf.png" alt="客服"></a>
+		<!-- <a title="点击这里给我发消息" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1093462863&amp;site=qq&amp;menu=yes" target="_blank">
+        <img src="images/sy_kf.png" alt="客服"> </a> -->
+	</div>
+	
 </body>
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/swiper-4.2.2.min.js"></script>
+<script src="js/jQuery-jcContact.js" language="javascript"></script>
 <!-- Initialize Swiper -->
   <script>
   	//特色扶贫轮播图
@@ -182,5 +221,20 @@
         },
       },
     });
+  </script>
+  <script type="text/javascript">
+  	//tab切换
+  	$(function() {
+
+    // 国内旅游
+    //1. 给li注册mouseenter事件
+    $(".tab-gn").click(function() {
+        //2. 让当前li添加active类，并且让其他的li移除active类
+        $(this).addClass("active-gn").siblings().removeClass("active-gn");
+        //3. 让对应下标的div添加selected，并且让其他div移除selected类
+        var idx = $(this).index();
+        $(".main-gn").eq(idx).addClass("selected-gn").siblings().removeClass("selected-gn");
+    });
+	});
   </script>
 </html>
