@@ -203,7 +203,7 @@ height: 18px;
 .bottom .products .main-gn {
 	display:none;
 }
-.bottom .products .main-gn.selected-gn {
+.bottom .products .selected-gn {
 	display:block;
 }
 .bottom .products .main-gn ul {

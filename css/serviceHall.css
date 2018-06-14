@@ -1,0 +1,29 @@
+body {
+	background-color: #F2F3F8;
+}
+.contactUs {
+	background-color: #fff;
+	
+	width: 1000px;
+	margin: 15px auto;
+}
+.contactUs_content {
+    text-align: left;
+    padding-bottom: 40px
+}
+.contactUs_content h3 {
+	height: 85px;
+	font-size: 22px;
+	color: #3676C5;
+	line-height: 85px;
+	text-align: center;
+}
+.contactUs_content>div {
+	background-color: #DCEBFC;
+	padding: 10px 0 10px 200px;
+
+}
+.contactUs_content>div p {
+	font-size: 17px;
+    margin: 10px auto;
+}
