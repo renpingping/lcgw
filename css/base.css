@@ -37,13 +37,17 @@ body {
 .right {
     float: right;
 }
+
 .current{
     border-bottom: 1px solid blue;
     margin:2rem auto;
     overflow: hidden;
     font-family: "黑体";
 }
-.currentLocation{
+.location a{
+    color: black;
+}
+.currentLocation a{
     color: red;
 }
 .location,.time{
