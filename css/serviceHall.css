@@ -1,6 +1,10 @@
 body {
 	background-color: #F2F3F8;
 }
+.usCurrent {
+	width: 1000px;
+	margin: 15px auto;
+}
 .contactUs {
 	background-color: #fff;
 	
@@ -13,10 +17,11 @@ body {
 }
 .contactUs_content h3 {
 	height: 85px;
-	font-size: 22px;
+	font-size: 24px;
 	color: #3676C5;
 	line-height: 85px;
 	text-align: center;
+    font-weight: bold;
 }
 .contactUs_content>div {
 	background-color: #DCEBFC;
@@ -24,6 +29,15 @@ body {
 
 }
 .contactUs_content>div p {
-	font-size: 17px;
+    font-size: 24px;
     margin: 10px auto;
+    font-weight: bold;
+    color: #000;
+    line-height: 30px;
+}
+.contactUs_content>div p span {
+    margin-right: 7px;
+}
+.contactUs_map {
+	height: 500px;
 }
