@@ -1,6 +1,7 @@
 body {
 	background-color: #F2F3F8;
 }
+/*联系我们*/
 .usCurrent {
 	width: 1000px;
 	margin: 15px auto;
@@ -40,4 +41,15 @@ body {
 }
 .contactUs_map {
 	height: 500px;
+}
+/*进言献策*/
+.advice {
+	width: 1000px;
+	margin: 15px auto;
+	background-color: #fff;
+}
+.mainAdvice h3 {
+	text-align: center;
+	font-size: 21px;
+	color: #000;
 }
