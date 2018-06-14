@@ -1,7 +1,7 @@
 .box{
 	width: 1010px;
 	margin: 10px auto;
-	margin-bottom: 500px;
+	margin-bottom: 50px;
 }
 .poorbg{
     height: 75px;
@@ -17,7 +17,7 @@
     margin: 40px 0;
 }
 .poor_list{
-	background-color: #ffa;
+    margin-top: 42px;
 	overflow: hidden;
 }
 .poor_list ul li{
@@ -38,14 +38,14 @@
 	
 } 
 .poor_list ul li span{
-	position: absolute;
-    /* display: block; */
-    top: 0px;
+    position: absolute;
+    top: 1px;
     left: 0px;
     text-align: center;
-    font-size: large;
-    color: #fff;
-    vertical-align: middle;
+    font: 500 21px/200px '微软雅黑';
+    color: #95f2ed;
+    /* text-shadow: 0 0 5px #549ff0, 0 0 5px #549ff0; */
+    text-shadow: -1px 0 #2196F3, 0 1px #2196F3, 1px 0 #2196F3, 0 -1px #2196F3;
 }
 .none{
 	display: none;
