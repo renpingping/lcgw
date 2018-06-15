@@ -1,6 +1,9 @@
+.box {
+    width: 1000px;
+    margin: 0 auto;
+}
 .news{
-    width: 745px;
-    height: 820px;
+    width: 100%;
     margin: 0 auto;
 }
 .news ul{
@@ -11,7 +14,7 @@
 }
 .news li{
     float: left;
-    width: 745px;
+    width: 99%;
     height: 55px;
     display: list-item;
     margin: 0 ;
@@ -31,22 +34,22 @@
     display: inline-block;
     margin-left:35px;
     margin-top:2px;
-    font-size: 14px;
+    font-size: 15px;
     font-family:"黑体";
 }
 .news span.b{
     float: right;
-    font-size: 14px;
+    font-size: 15px;
     color: #999999;
     margin-right: 4px;
 }
 
 .yema{
-    width: 745px;
     height: 20px;
     color:#999999;
     text-align: right;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-right: 15px;
 }
 .yema ul.pagination {
     display: inline-block;
