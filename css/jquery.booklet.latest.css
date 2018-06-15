@@ -21,8 +21,8 @@
 	   
    	/* Page Wrappers */
 	.booklet .b-wrap       {top:0; position:absolute;}
-	.booklet .b-wrap-left  {background: url(../images/left_bg.png) no-repeat top left;background-size: 100% 100%;}
-	.booklet .b-wrap-right {background: url(../images/right_bg.png) no-repeat top left;background-size: 100% 100%;}
+	.booklet .b-wrap-left  {background: url(../images/left_bg1.png) no-repeat 0px -5px;background-size: 100% 103%;}
+	.booklet .b-wrap-right {background: url(../images/right_bg1.png) no-repeat 0px -7px;background-size: 100% 112%;}
 	
 	.booklet .b-pN .b-wrap,
 	.booklet .b-p1 .b-wrap,
