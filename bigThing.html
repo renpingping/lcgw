@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大事记描述</title>
+	<link rel="stylesheet" href="css/jquery.booklet.latest.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/bigThing.css">
+</head>
+<body>
+	<div class="box">
+		<div class="current">
+			<div class="left location">
+				<span>当前位置 > <a href="###">产业扶贫</a> > </span><span class="currentLocation"><a href="###">特色扶贫</a></span>	
+			</div>
+			<div class="right time">
+				<span>现在时间：</span><span class="datetime" id="datetime">日期</span>
+			</div>
+		</div>
+		<div class="big_thing">
+			<div class="book_box">
+				<div id="mybook" >
+			        <div>
+			            <h3>Yay, Page 1!</h3>
+			            <img src="images/carousel_1.png" alt="" class="bg">
+			        </div>
+			        <div>
+			            <h3>Yay, Page 2!</h3>
+			            <img src="images/carousel_2.png" alt="" class="bg">
+			        </div>
+			        <div>
+			            <h3>Yay, Page 3!</h3>
+			            <img src="images/carousel_3.png" alt="" class="bg">
+			        </div>
+			        <div>
+			            <h3>Yay, Page 4!</h3>
+			        </div>
+			        <div>
+			            <h3>Yay, Page 5!</h3>
+			        </div>
+			        <div>
+			            <h3>Yay, Page 6!</h3>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/navDate.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <!-- jQuery UI (optional) -->
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+    <!-- Booklet -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.booklet.latest.min.js"></script> 
+<script type="text/javascript">
+        $(function(){
+            //single book
+            $('#mybook').booklet({
+            	width:900,
+            	height:540,
+            	auto:true
+            });
+            /*//multiple books with ID's
+            $('#mybook1, #mybook2').booklet();
+            //multiple books with a class
+            $('.mycustombooks').booklet();*/
+        });    
+    </script>
+</html>
