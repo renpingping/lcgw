@@ -47,9 +47,69 @@ body {
 	width: 1000px;
 	margin: 15px auto;
 	background-color: #fff;
+	background: url(../images/advice_1.png) no-repeat 0 0.3%;
+	background-size: cover;
 }
-.mainAdvice h3 {
+.advice_title {
+	margin: 0 auto;
+}
+.advice_title h3 {
 	text-align: center;
 	font-size: 21px;
 	color: #000;
+	height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.advice_content {
+	width: 930px;
+	margin: 15px auto;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #D3E1EF;
+}
+.advice_content p {
+	border-left: 5px solid #8AB8E5;
+    min-height: 65px;
+    line-height: 65px;
+    padding: 0 20px;
+    position: relative;
+}
+.advice_content p img {
+    position: absolute;
+    top: 16px;
+    left: -17px;
+    width: 30px;
+}
+.advice_content p span.titleAdvice {
+	font-size: 18px;
+	color: #999;
+    float: left;
+    margin: 0 5px;
+}
+.advice_content p span:last-child {
+	font-size: 18px;
+	color: #999;
+	position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.advice_content p span.mainAdvice {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 5px;
+    width: 700px;
+    display: inline-block;
+
+}
+.leavingMessage {
+	display: inline-block;
+}
+.leavingMessage button {
+	width: 200px;
+	height: 50px;
+	background: url(../images/advice_2.png) no-repeat;
+	background-size: 100% 100%;
+    line-height: 50px;
+    font-size: 16px;
 }
