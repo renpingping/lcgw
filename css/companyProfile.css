@@ -28,6 +28,9 @@
     font: 500 22px/50px "微软雅黑";
     margin-bottom: 20px;
 }
+.company_list a{
+    color:black;
+}
 .company_detail p {
     font-size: 15px;
     text-indent: 2rem;
