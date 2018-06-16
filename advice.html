@@ -65,18 +65,85 @@
 			</p>
 		</div>
 	</div>
-	<!-- 我要留言 -->
+	<!-- 我要留言按钮 -->
 	<div class="leavingMessage">
-		<button onclick="message()">我要留言</button>
+		<button id="open">我要留言</button>
 	</div>
-
+	<!-- 我要留言弹窗 -->
+	<div class="popup" id="popup">
+		<div class="msgPopup">
+			<!-- 弹窗标题 -->
+			<div class="popup_title">
+				<h3>我要留言<img id="close" src="images/popup_close.png" alt="关闭"></h3>
+			</div>
+			<!-- 弹窗内容 -->
+			<div class="popup_content">
+				<form>
+					<p>留言内容(意见与建议):</p>
+					<p class="textarea"><textarea id="popup_advice"></textarea></p>
+					<p>请留下您的联系方式,以便我们联系:</p>
+					<p class="contact">
+						<label>QQ : </label><input type="text" name="QQ" id="popup_QQ">
+						<label>邮箱 : </label><input type="text" name="email" id="popup_email">
+						<label>手机 : </label><input type="text" name="tel" id="popup_tel">
+					</p>
+					<p><input id="submission" type="button" value="提交"></p>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script src="js/navDate.js"></script>
 <script type="text/javascript">
-function message(){
-	console.log(123)
-}
 
+$(function() {
+	// 弹窗开启关闭
+	$("#open").on("click",function(){
+		$("#popup").show(400);
+	})
+	$("#close").on("click",function(){
+		$("#popup").hide(400);
+	})
+	//弹窗内容提交验证
+	$("#submission").on("click",function(){
+		var popup_advice = $("#popup_advice").val();
+		var popup_QQ = $("#popup_QQ").val();
+		var popup_email = $("#popup_email").val();
+		var popup_tel = $("#popup_tel").val();
+		var QQReg = RegExp(/^[1-9][0-9]{4,9}$/);
+		var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+		var PhoneReg = /^1[0-9]{10}$/;  
+		 if (!popup_advice) {
+			alert("请输入留言内容");
+			return;
+		}
+		 if (popup_QQ ==''&& popup_email ==''&& popup_tel =='') {
+			alert("请输入联系方式");
+			return;
+		}
+		 if (popup_QQ) {
+			if (!QQReg.test(popup_QQ)) {
+		 	alert("请输入正确QQ号码");
+		 	return;
+		 }
+		}
+		 if (popup_email) {
+		 	if (!myreg.test(popup_email)) {
+		 	alert("请输入正确的邮箱");
+		 	return;
+		 }
+		}
+		 if (popup_tel) {
+			if (!PhoneReg.test(popup_tel)) {
+		 	alert("请输入正确的手机号码")
+		 	return;
+		 }
+		}
+		alert("提交成功,感谢您的留言!");
+		 	$("#popup").hide(400);//隐藏弹窗
+		 	location.reload();//刷新页面
+	})
+})
 </script>
 </html>
