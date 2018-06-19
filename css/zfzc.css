@@ -6,25 +6,13 @@
     width: 100%;
     margin: 0 auto;
 }
-.news ul{
-    text-decoration: none;
-    margin: 0 ;
-    padding: 0;
-    list-style: none;
-}
 .news li{
     float: left;
     width: 99%;
-    height: 55px;
-    display: list-item;
-    margin: 0 ;
-    padding: 0;
     background: url(../images/政策支持.png) no-repeat 8px center;
     background-size: 15px 22px;
-    line-height: 54px;
+    line-height: 53px;
     border-bottom: 2px solid #f2f2f2;
-    margin-left:  0px;
-    font-size: 12px;
 }
 
 .news a{
@@ -45,34 +33,26 @@
 }
 
 .yema{
-    height: 20px;
-    color:#999999;
     text-align: right;
-    margin-top: 10px;
-    margin-right: 15px;
+    margin:15px;
 }
 .yema ul.pagination {
     display: inline-block;
-    padding: 0;
-    margin: 0;
 }
 
 .yema ul.pagination li {
     float: left;
-    display: inline;
 }
 
 .yema ul.pagination li a {
-    color:#999999;
-    float: left;
     margin-left: 3px;
-    text-decoration: none;
+    color:#999999; 
 }
 .yema ul.pagination span {
     margin-right: 2px;
     color:#999999;
-}
 
+}
 .yema ul.pagination  a:hover {
     color: red;
 }

@@ -4,27 +4,22 @@
 }
 .center{
 	width: 1000px;
-	height:100%;
 	margin: 0px;	
 	padding: 0px;
 }
 .top{
-	width: 1000px;
 	height:40px;
-	text-align: center;
     margin-top: 50px;
+    text-align: center;
 }
 .top h3{
 	font-size: 20px;
 	color:#000000; 
 	line-height: 40px;
     font-weight:bold;
-
 }
 .text{
 	width: 1000px;
-	margin: 0px;
-	padding: 0px;
     padding: 16px  0px;
 }
  p{
@@ -32,20 +27,21 @@
 	line-height: 25px;
     font-family: "黑体";
     text-indent: 2em ;
-    margin: 30px 0 30px 0;
-
-
-
 }
+.mp4{
+	margin: 25px auto;
+}
+
+
 .text img.one{
 	width: 535px;
 	height: 345px;
-	margin: 0px 237px;	
+	margin: 20px 237px;	
 }
 
 .text img.two{
 	width: 370px;
 	height: 220px;
-    margin: 0px 315px;
+    margin: 20px 315px;
 }
 
