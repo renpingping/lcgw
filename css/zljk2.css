@@ -62,16 +62,24 @@
 	margin: 0px;
 	padding: 0px; 
 }
-.control li {
+.mp4{
+	width: 1000px;
+	margin: 0px;
+	padding: 0px; 
+
+} 
+.mp4 li {
 	float: left;
     width: 300px;
     margin: 0 16px;
     text-align: center;
 }
-.control span {
+.mp4 li a img{
+	width: 300px;
+	height: 185px;
+}
+.mp4 li span {
 	font-size: 25px;
 	line-height: 80px;
 	color:rgba(0,0,0);
-	margin: 0px;
-	padding: 0px;
 }
