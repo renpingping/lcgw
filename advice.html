@@ -116,27 +116,32 @@ $(function() {
 		var PhoneReg = /^1[0-9]{10}$/;  
 		 if (!popup_advice) {
 			alert("请输入留言内容");
+			$("#popup_advice").focus();
 			return;
 		}
 		 if (popup_QQ ==''&& popup_email ==''&& popup_tel =='') {
 			alert("请输入联系方式");
+			$("#popup_QQ").focus();
 			return;
 		}
 		 if (popup_QQ) {
 			if (!QQReg.test(popup_QQ)) {
 		 	alert("请输入正确QQ号码");
+		 	$("#popup_QQ").focus();
 		 	return;
 		 }
 		}
 		 if (popup_email) {
 		 	if (!myreg.test(popup_email)) {
 		 	alert("请输入正确的邮箱");
+		 	$("#popup_email").focus();
 		 	return;
 		 }
 		}
 		 if (popup_tel) {
 			if (!PhoneReg.test(popup_tel)) {
 		 	alert("请输入正确的手机号码")
+		 	$("#popup_tel").focus();
 		 	return;
 		 }
 		}
