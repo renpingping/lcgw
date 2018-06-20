@@ -36,6 +36,7 @@
 }
 .mybook_content {
     overflow: hidden;
+    height: 500px;
 }
 .mybook_content h3 {
     color: #000;
@@ -49,9 +50,5 @@
     text-indent: 2em;
     font-size: 15px;
     line-height: 25px;
-    margin-top: 16px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 18;// 限制快级元素的文本行数
-    
+    margin-top: 16px;  
 }
