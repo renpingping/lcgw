@@ -88,8 +88,8 @@
 	display: none;
 	position: absolute;
     top: 55px;
-    left: 20px;
-    width: 120px;
+    left: 5px;
+    width: 150px;
     color: #fff;
     background-color: #8aacce;
 }
@@ -97,7 +97,7 @@
 	display: block;
     float: left;
     margin-top: 10px;
-    width: 120px;
+    width: 150px;
     text-align: center;
     color: #fff;
     font: 300 17px/30px "Microsoft YaHei";
