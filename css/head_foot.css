@@ -8,22 +8,25 @@
     margin-top: 10px;
     text-align: center;
 }
-.top .top-login {
+.top_top .top-login {
     height: 70px;
     padding: 30px 30px 20px;
 }
-.top .top-login .right {
+.top_top .top-login .right {
     margin-right: 60px;
-    margin-top: -30px;
+    margin-top: -55px;
     font-size: 18px;
+    text-align: right;
 }
-.top .top-login .right a {
+.top_top .top-login .right a {
     padding: 10px 30px;
     border-radius: 20px;
     color: #fff;
     background-color: #2c7ecf;
+    display: inline-block;
+    margin-top: 10px;
 }
-.top .top-login .right a:hover {
+.top_top .top-login .right a:hover {
     color: #c40000;
 }
 .slogan {
@@ -40,28 +43,28 @@
 .slogan p:nth-child(2){
 	font-size: 16px;
 }
-.top .top-nav {
+.top_top .top-nav {
     width: 100%;
     height: 55px;
     background-color: #ededed;
     background: url(../images/nav_bg.png) no-repeat ;
     background-size: cover;
 }
-.top .top-nav ul {
+.top_top .top-nav ul {
     height: 100%;
     width: 100%;
 }
-.top .top-nav ul li {
+.top_top .top-nav ul li {
     height: 100%;
     float: left;
-    width: 142px;
+    width: 125px;
     text-align: center;
     color: #fff;
     font: 500 20px/51px "Microsoft YaHei";
     cursor: pointer;
    /*  background-color: #ededed; */
 }
-.top .top-nav ul li>a {
+.top_top .top-nav ul li>a {
     display: block;
     float: right;
     height: 100%;
@@ -72,20 +75,20 @@
     cursor: pointer;
     font-family: "宋体";
 }
-.top .top-nav ul li:last-chlid{
+.top_top .top-nav ul li:last-chlid{
 	margin-left: 10px;
 }
-.top .top-nav .show{
+.top_top .top-nav .show{
 	position: relative;
 }
-.top .top-nav ul li a:hover {
+.top_top .top-nav ul li a:hover {
 	background-color: #155a9e;
 }
 .top-nav .none{
 	display: none;
 	position: absolute;
     top: 55px;
-    left: 38px;
+    left: 20px;
     width: 120px;
     color: #fff;
     background-color: #8aacce;
@@ -103,7 +106,7 @@
 .top-nav .none a:last-child{
 	margin-bottom: 15px;
 }
-.top .top-nav .show:hover .none{
+.top_top .top-nav .show:hover .none{
 	display: block;
 }
 
@@ -121,7 +124,7 @@
     margin-top: -12px;
     margin-left: 20px;
 } */
-.top .top-nav .right {
+.top_top .top-nav .right {
     padding-left: 6px;;
     margin-right: 30px;
     width: 250px;
@@ -133,7 +136,7 @@
     /* border: 1px solid #96c0f0; */
     border: 1px solid #fff;
 }
-.top .top-nav .right input {
+.top_top .top-nav .right input {
     width: 150px;
     height: 35px;
     margin-left: 25px;
@@ -143,7 +146,7 @@
     font: 400 12px/45px "Microsoft Yahei";
     color: #333;
 }
-.top .top-nav .right button {
+.top_top .top-nav .right button {
 width: 50px;
     height: 35px;
     border-top-right-radius: 10px;

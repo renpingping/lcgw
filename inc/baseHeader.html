@@ -8,8 +8,13 @@
 	<link rel="stylesheet" href="../css/swiper-4.2.2.min.css">
     <script src="../js/jquery-3.3.1.js"></script>
 </head>
+<style>
+    form {
+        width: 150px;
+    }
+</style>
 <body>
-    <div class="top">
+    <div class="top_top">
         <div class="top-login">
             <img src="../images/head_1.png" alt="" class="left">
             <div class="slogan">
@@ -18,7 +23,9 @@
             </div>
             
             <div class="right">
-                <a href="##">运维管理</a>
+               
+                <p><!-- <span>现在时间：</span> --><span class="datetime" id="datetime"></span></p>
+               <a href="##">运维管理</a>
                
             </div>
         </div>
@@ -36,19 +43,28 @@
                 </li>
                 <li class="show">
                 	<a href="javascript:;">产业扶贫</a>
-                	<div class="none">
-                		<a href="#">特色扶贫</a>
-                		<a href="#">大事记描述</a>
-                	</div>
+                	<!-- <div class="none">
+                        <a href="#">特色扶贫</a>
+                        <a href="#">大事记描述</a>
+                    </div> -->
                 </li>
                 <li class="show">
-                	<a href="javascript:;">栾川印象</a>
-                	<div class="none">
-                		<a href="#">概况</a>
-                		<a href="#">企业风采</a>
-                		<a href="#">特色产品</a>
-                	</div>
+                    <a href="javascript:;">品牌理念</a>
                 </li>
+                <li class="show">
+                    <a href="javascript:;">企业风采</a>
+                </li>
+                <li class="show">
+                    <a href="javascript:;">产品展示</a>
+                </li>
+                <!-- <li class="show">
+                    <a href="javascript:;">栾川印象</a>
+                    <div class="none">
+                        <a href="#">概况</a>
+                        <a href="#">企业风采</a>
+                        <a href="#">特色产品</a>
+                    </div>
+                </li> -->
                 <li class="show">
                 	<a href="javascript:;">质量追溯</a>
                 	<div class="none">
@@ -57,13 +73,13 @@
                 		<a href="#">在线防伪</a>
                 	</div>
                 </li>
-                <li class="show">
-                	<a href="javascript:;">新闻资讯</a>
-					<div class="none">
-                		<a href="#">政策支持</a>
-                		<a href="#">通知公告</a>
-                	</div>
-                </li>
+               <!--  <li class="show">
+                   <a href="javascript:;">新闻资讯</a>
+                                   <div class="none">
+                       <a href="#">政策支持</a>
+                       <a href="#">通知公告</a>
+                   </div>
+               </li> -->
                 <li class="show">
                 	<a href="javascript:;">服务大厅</a>
                 	<div class="none">
@@ -72,10 +88,7 @@
                 		<a href="#">联系我们</a>
                 	</div>
                 </li>
-                <li>
-                    <!-- <input class="search" placeholder="输入搜索内容" type="search" name="" id="" > -->
-                    
-                </li>
+                
             </ul>
            <div class="right">
                     <div class="select">
@@ -83,33 +96,8 @@
                         <div class="box2" style="display: none;">
                             <div class="dd" name="wenjian">新闻通知</div>
                             <div class="dd" name="zhengce">印象特产</div>
-                        </div>
                     </div>
-                    <script>
-                        $(function () {
-                            $('.dt').on('mouseenter', function () {
-                                $('.box2').toggle();
-                            });
-                            $('.box2').on('mouseleave', function () {
-                                $('.box2').hide();
-                            });
-                            $('.box2 .dd').on('click', function (event) {
-                                $('.dt').text($(this).text());
-                                $('.box2').hide();
-                                $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
-                                var str = $(this).attr('name');
-                                /*alert(str);*/
-                                $('form').hide();
-                                $('.'+str).show();
-                                return false;
-                            })
-                        });
-                    </script>
-                    <style>
-                        form {
-                            width: 150px;
-                        }
-                    </style>
+            </div>
                     <form class="wenjian left"><input class="left" placeholder="搜索新闻、印象特产" type="search" name="" id=""></form>
                     <form class="zhengce left" style="display: none;"><input class="left" placeholder="搜索新闻、印象特产" type="search" name="" id="" ></form>
                     
@@ -120,6 +108,27 @@
    
 </body>
 <script src="../js/swiper-4.2.2.min.js"></script>
+<script src="../js/navDate.js"></script>
+ <script>
+    $(function () {
+        $('.dt').on('mouseenter', function () {
+            $('.box2').toggle();
+        });
+        $('.box2').on('mouseleave', function () {
+            $('.box2').hide();
+        });
+        $('.box2 .dd').on('click', function (event) {
+            $('.dt').text($(this).text());
+            $('.box2').hide();
+            $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
+            var str = $(this).attr('name');
+            /*alert(str);*/
+            $('form').hide();
+            $('.'+str).show();
+            return false;
+        })
+    });
+</script>
 <script>
 	var mySwiper = new Swiper('.swiper-container2', {
 	  autoplay: {
@@ -132,6 +141,5 @@
       loop: true,
 	});
 	
-
 </script>
 </html>
